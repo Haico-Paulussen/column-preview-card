@@ -17,17 +17,38 @@ body {
 
 main {
     display: flex;
-    overflow: hidden;
+    margin-bottom: 20px;
     width: 80vw;
     max-width: 1440px;
     border-radius: 10px;
 }
 
 @media (max-width: 1000px) {
-  main {
-    width: 80vw;
-    flex-direction: column;
-  }
+    main {
+        flex-direction: column;
+    }
+
+    .card:first-child {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .card:last-child {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+@media (width > 1000px) {
+    .card:first-child {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .card:last-child {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
 }
 
 .card {
@@ -52,7 +73,7 @@ main {
 }
 
 .icon {
-  width: 60px;
+    width: 60px;
 }
 
 .sedan {
@@ -102,7 +123,6 @@ a.button:hover {
 footer {
     color: black;
     text-align: center;
-    position: fixed;
     width: 100%;
     bottom: 0;
     background-color: #f2f2f2;

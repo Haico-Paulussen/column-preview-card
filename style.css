@@ -1,0 +1,119 @@
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark-cyan: hsl(179, 100%, 13%);
+    --trans: hsla(0, 0%, 100%, 0.75);
+    --grey: hsl(0, 0%, 95%);
+}
+
+body {
+    display: grid;
+    place-items: center;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    overflow: hidden;
+    width: 80vw;
+    max-width: 1440px;
+    border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  main {
+    width: 80vw;
+    flex-direction: column;
+  }
+}
+
+.card {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card p {
+    color: var(--trans);
+    margin-bottom: 80px;
+    line-height: 1.6;
+}
+
+.card h1 {
+    font-family: "Big Shoulders Display", sans-serif;
+    color: var(--grey);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.icon {
+  width: 60px;
+}
+
+.sedan {
+    background-color: var(--orange);
+}
+
+.suv {
+    background-color: var(--cyan);
+}
+
+.luxury {
+    background-color: var(--dark-cyan);
+}
+
+a.sedan {
+    color: var(--orange);
+}
+
+a.suv {
+    color: var(--cyan);
+}
+
+a.luxury {
+    color: var(--dark-cyan);
+}
+
+a.button {
+    display: inline-block;
+    background-color: var(--grey);
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 10px;
+    width: 60%;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s;
+    margin-top: auto;
+}
+
+a.button:hover {
+    border: 2px solid white;
+    color: white;
+    background-color: hsla(0, 0%, 0%, 0);
+    text-decoration: underline;
+}
+
+footer {
+    color: black;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #f2f2f2;
+    padding: 1rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

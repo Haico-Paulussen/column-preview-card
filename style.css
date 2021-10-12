@@ -17,7 +17,7 @@ body {
 
 main {
     display: flex;
-    width: 80vw;
+    width: 70vw;
     max-width: 1440px;
     border-radius: 10px;
     padding-bottom: 60px;

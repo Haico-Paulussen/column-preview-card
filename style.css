@@ -17,10 +17,10 @@ body {
 
 main {
     display: flex;
-    margin-bottom: 20px;
     width: 80vw;
     max-width: 1440px;
     border-radius: 10px;
+    padding-bottom: 60px;
 }
 
 @media (max-width: 1000px) {
@@ -123,6 +123,7 @@ a.button:hover {
 footer {
     color: black;
     text-align: center;
+    position: fixed;
     width: 100%;
     bottom: 0;
     background-color: #f2f2f2;
